@@ -1,0 +1,26 @@
+{
+  "name": "neo-server",
+  "version": "1.0.0",
+  "description": "Create your own web server easily",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ClementNerma/NeoServer"
+  },
+  "main": "neo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+      "neo.js",
+      "examples"
+  ],
+  "bin": {
+    "neo": "neo.js"
+  },
+  "dependencies": {
+      "chalk": "latest",
+      "isbinaryfile": "latest"
+  },
+  "author": "Clement Nerma <clement.nerma@gmail.com> (https://github.com/ClementNerma)",
+  "license": "CC-BY-NC-ND-4.0"
+}

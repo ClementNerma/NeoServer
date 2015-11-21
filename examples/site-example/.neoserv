@@ -1,0 +1,16 @@
+rootfile = index.html,index.htm
+xcutable = html,htm
+
+[mime-types]
+html = text/html
+css  = text/css
+js   = text/javascript
+
+[deny]
+private/
+
+[errorDocument]
+ErrorDocument 404 errors/404.html
+
+[rewrite]
+RewriteUrl errors/* errors/$1.html
