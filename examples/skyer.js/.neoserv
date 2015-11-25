@@ -1,0 +1,2 @@
+[rewrite]
+RewriteUrl * index.html

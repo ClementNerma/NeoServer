@@ -48,6 +48,8 @@ Argument                | Default    | Description
 --log-requests          |            | Set to a value to log all incoming requests and store it in the specified file
 --dynamic-neoserv-file  | false      | Set to "true" to reload *.neoserv* file at each incoming requests
 --benchmark             | false      | Set to "true" to display time spent to send the request (in miliseconds)
+--debug                 |            | Include this argument to see errors' details
+--mods                  |            | List of mods, all names separated by a comma
 
 ## *.neoserv* files
 
@@ -107,4 +109,4 @@ The code between *<%* and *%>* is runned and the result is placed in the page. F
 <p>You are seeing the URL : documents/interview.html</p>
 ```
 
-You can access to only three variables : *require*, *request* and *response*. *request* and *response* are Node.js variables. 
+You can access to only three variables : *require*, *request* and *response*. *request* and *response* are Node.js variables.

@@ -1,6 +1,6 @@
 {
   "name": "neo-server",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Create your own web server easily",
   "repository": {
     "type": "git",
@@ -12,7 +12,8 @@
   },
   "files": [
       "neo.js",
-      "examples"
+      "examples",
+      "mods"
   ],
   "bin": {
     "neo": "neo.js"

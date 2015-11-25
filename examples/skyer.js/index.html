@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Skyer Framework</title>
+</head>
+<body>
+    <%
+        var needed = ['php_js'];
+
+        for(var i = 0; i < needed.length; i += 1) {
+            if(!mods.hasOwnProperty(needed[i]))
+                return "<h1>Skyer needs <em>" + needed[i] + "</em> mod";
+        }
+
+        try {
+            var skyer = file_get_contents('skyer.js');
+        }
+
+        catch(e) {
+            die("<h1>Failed to load Skyer resources</h1><br />");
+        }
+        
+        // Run Skyer
+        eval(skyer);
+    %>
+</body>
+</html>
